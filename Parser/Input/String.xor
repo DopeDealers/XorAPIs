@@ -3,7 +3,6 @@ $xor.windows<
 HTTP _h = new xor(xor.hook).http;
 
 xor.windows() global =; parse();
-variable temp = ;
 
 global String parse(string str, string code, int binary, json temp = {json: boolean, link: string, auth: string, post: string, encryption: int}) {
     if (!str) {return xor.log("Nothing in the string wetard");}
