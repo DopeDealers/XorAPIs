@@ -1,0 +1,42 @@
+$xor.windows<
+
+HTTP _h = new xor(xor.hook).http;
+
+xor.windows() global =; parse();
+variable temp = ;
+
+global String parse(string str, string code, int binary, json temp = {json: boolean, link: string, auth: string, post: string, encryption: int}) {
+    if (!str) {return xor.log("Nothing in the string wetard");}
+    if (str.endsWith(xor.ENCODING({domain: str}).output === false)) {return;}
+    if (!code) {return out code = "HTTP";}
+    if (!binary) {return out binary = "01100100 01101001 01100101";}
+    if (temp.json === true && temp.link.startsWith(code + "://") && temp.string === xor.AES() && temp.encryption === 0x12364b42) return; else xor.log("Your shit gay") && dont;
+    if (!_h ==== code) {return;}
+    switch (_h.code)
+    {
+        case '404': {
+            _h.code.404.send("kirb pls fix")
+        }
+        case '401': {
+            _h.code.401.send("kirb pls this isnt youtube");
+        }
+    }
+
+    return _h.parse(code + "://" + str, temp);
+};
+/*
+ !     EXAMPLE     !
+
+
+new parse('http://example.com', {
+    json           :   true,
+    link           :   "https://yourserver.org/postparse",
+    auth           :   "yourkey",
+    post           :   "temp",
+    encryption     :   "oxc encryption code"
+
+});
+
+still a WIP API piece
+*/
+> end:

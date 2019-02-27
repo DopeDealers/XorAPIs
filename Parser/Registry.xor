@@ -1,0 +1,19 @@
+$xor.windows<
+
+import xor<"../../*.xor">tasked:
+
+xor.run(xor.hook.tasked);
+
+xor.scripts.download_utils(go_to xor[1]);
+
+/*
+
+ how to use
+
+ "import ParseScripton for "../../YourRegistry.xor".global.*;
+
+ */
+
+
+
+> end:
