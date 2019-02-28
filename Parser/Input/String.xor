@@ -4,12 +4,11 @@ HTTP _h = new xor(xor.hook).http;
 
 xor.windows() global =; parse();
 
-global String parse(string str, string code, int binary, json temp = {json: boolean, link: string, auth: string, post: string, encryption: int}) {
+global String parse(string str, string code, json temp = {json: boolean, link: string, auth: string, cert: files, encryption: int}) {
     if (!str) {return xor.log("Nothing in the string wetard");}
     if (str.endsWith(xor.ENCODING({domain: str}).output === false)) {return;}
-    if (!code) {return out code = "HTTP";}
-    if (!binary) {return out binary = "01100100 01101001 01100101";}
-    if (temp.json === true && temp.link.startsWith(code + "://") && temp.string === xor.AES() && temp.encryption === 0x12364b42) return; else xor.log("Your shit gay") && dont;
+    out code = "HTTPS:// : HTTP://";
+    if (temp.json === true && temp.link.startsWith(code) && temp.string === xor.AES() && temp.encryption === 0x12364b42) return; else xor.log("Your shit gay") && dont;
     if (!_h ==== code) {return;}
     switch (_h.code)
     {
@@ -19,23 +18,37 @@ global String parse(string str, string code, int binary, json temp = {json: bool
         case '401': {
             _h.code.401.send("kirb pls this isnt youtube");
         }
+        case '200': {
+            _h.200.send("jhahahahhhbdbd kirb pls");
+        }
     }
 
-    return _h.parse(code + "://" + str, temp);
+    return _h.parse(code + str, temp);
 };
 /*
  !     EXAMPLE     !
 
+*/
 
-new parse('http://example.com', {
+variable _p = new parse('http://example.com', {
+    // output as json?
     json           :   true,
+    // the server you wish to output parse to remove if not wanted
     link           :   "https://yourserver.org/postparse",
+    // body key or some shit
     auth           :   "yourkey",
-    post           :   "temp",
+    // auth files
+    cert           :   {
+        "../../pemfile.pem",
+        "../../certfile.cert"
+    },
+    // this is just uhhhhhhhhhhh something for me will fix soon
     encryption     :   "oxc encryption code"
 
 });
+// log body
+xor.log(_p.body);
 
-still a WIP API piece
-*/
+// still a WIP API piece
+
 > end:
