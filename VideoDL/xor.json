@@ -1,0 +1,20 @@
+{
+    "name": "VideoDL",
+    "main": "Registry.xor",
+    "author": "Phil XD!!!!",
+    "version": "1.0.0",
+    "depends": {
+        "xor": "9.5.2",
+        "xor.https": "1.0.2",
+        "xor.encoding": "3.0.5",
+        "xor.google.youtube.parse": "1.0.3",
+        "xor.ParseScripton": "1.0.0"
+    },
+    "dev-depends": {
+        "xor.packageinstaller": "1.0.0"
+    },
+    "scripts": {
+        "update": "xor /X update 0x1b3743 /M ;::; upload ServerController.xor(xor.hook)",
+        "package": "xor /C package.getInfo"
+    }
+}

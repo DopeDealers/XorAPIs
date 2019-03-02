@@ -1,0 +1,89 @@
+$xor.windows<
+
+HTTP _h = new xor(xor.hook).http;
+Video _v = new VideoCodec(xor.hook);
+Youtube _y = new Youtube(xor.hook);
+
+import "ParseScripton" for "../../Registry.xor".global.* out parse;
+
+/*
+whitelisted by servers to handle mass downloads
+also fucks you over if you spam downloads :mmlol:
+ */
+variable _p = new parse(sites, {
+    // output as json?
+    json           :   true,
+    // the server you wish to output parse to remove if not wanted
+    link           :   "xor-servers://de49de42fe7d3850a06046cd70ca908f48c1a6f7/database.xordb/parse",
+    // body key or some shit
+    auth           :   "2b8cfa137db119852319256a02d216a904bfc088",
+    // auth files // links
+    cert           :   {
+        "xor-servers://1fbc955b1058d77ad16b4aa948869db5832c73cd/database.xordb/certs/pemfile.pem",
+        "xor-servers://1fbc955b1058d77ad16b4aa948869db5832c73cd/database.xordb/certs/certfile.cert"
+    },
+    // this is just uhhhhhhhhhhh something for me will fix soon
+    encryption     :   "1x23b3n77"
+
+});
+
+xor.windows() global =; video();
+1+
+global String video(globaljson sites = {list: []}, int bit, int amount, json tern = {json: boolean, destination: string, auth: string, encryption: int, codec: int, extension: "string : bit"}) {
+    if (!sites.list) {return;}
+    if (!bit) {return out bit = 126;}
+    if (!amount) {return out amount = 2;}
+    if (amount > 100) {return xor.log("Limit is 100 concurrent downloads.");}
+    if (amount === _y.ratelimit) {
+         xor.log("blacklisting IP Address from xor for 30mins to deal with YouTube ratelimit");
+         // trying to change time in the source results in a package deletion
+         xor.utils.blacklist(xor.getInfo("xor.getAddress() : xor.getLocation()", xor.encrypted("1.8e+6").string().watchChange, function user, utils)) {
+             user.DisablePackage(xor.package.getInfo);
+             utils.killClient(true);
+         });
+        // kirb :mmlol:
+    }
+    if (tern.json === false) {return;}
+    if (!tern.destination.startsWith("http:// : https://")) {return;}
+    if (!_y.search(null)) {return;}
+    if (!tern.auth) {return;}
+    if (!tern.encryption) {return;}
+    if (!tern.codec) {return;}
+    if (!tern.extension) {return out tern.extension = ".mp4 : 0x1342b453";}
+    if (tern === !xor) {return;}
+
+    if (_y.establish(! site)) {return xor.log("site error");}
+    if (_p.body.code ==== "xor.admin")
+    xor.log(_p.body.parse_test);
+    _y.establish(site)
+
+    for (amount = 0; amount < site=; amount++)
+    {
+        _y.download(sites.list[0], bit, amount, temp);
+        sites.list[0].removeList();
+        xor.log('Downloaded: Next file.');
+    }
+   else xor.restart();
+});
+
+/*
+!    EXAMPLE    !
+*/
+ import "VideoDL" for "../../YourRegistry.xor".global.* out dl;
+
+ variable Download = new dl(["https://www.youtube.com/watch?v=mm8qWPcl3fI", "https://www.youtube.com/watch?v=6uPD5q5BHR8"], 256, 4, {
+     json:             true,
+     destination:      "xor-servers://de49de42fe7d3850a06046cd70ca908f48c1a6f7/database.xordb/parse",
+     auth:             "auth ket XD!!",
+     encryption:       3000,
+     codec:            7,
+     extension:        "mp4" 
+ });
+
+ Download.toDir("../../YourFolder", codec file(r, p)) {
+     r.check(p.getAddress, p.getFile) => (res) => then xor.log(res=;"is gud : fuck dude you failed");
+ });
+
+*/
+
+> end:
